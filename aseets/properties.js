@@ -1,0 +1,447 @@
+/**
+ * مشاور املاک آداک عالیشهر (مدیریت: نجفی)
+ * پایگاه داده املاک و فایل‌های فعال عالیشهر
+ */
+
+const propertiesData = [
+  {
+    id: "AD-101",
+    code: "ADK-140301",
+    title: "فروش آپارتمان ۱۰۰ متری نوساز کلید نخورده - فاز یک عالیشهر",
+    shortTitle: "آپارتمان نوساز ۱۰۰ متری",
+    type: "sale", // sale | rent
+    category: "apartment", // apartment | villa | land | commercial
+    phase: "فاز ۱",
+    location: "فاز ۱ عالیشهر، خوش نقشه (مجاورت بلوار خلیج فارس و مراکز خرید)",
+    priceTotal: "۱,۷۵۰,۰۰۰,۰۰۰",
+    priceUnit: "۱۷,۵۰۰,۰۰۰",
+    rentDeposit: null,
+    rentMonthly: null,
+    area: 100,
+    rooms: 2,
+    floor: "۲ با آسانسور فعال",
+    floorsTotal: 4,
+    unitsPerFloor: 2,
+    year: "۱۴۰۳ نوساز کلید نخورده",
+    document: "تک‌برگ ملکی (استعلام‌شده و آزاد)",
+    direction: "جنوبی (نورگیر) - غرق در روشنایی روز",
+    featured: true,
+    specialTag: "فروش ویژه مسکونی",
+    badge: "کلید نخورده - آماده تحویل",
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+    gallery: [
+      { title: "سالن پذیرایی و نورگیر اصلی", url: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" },
+      { title: "نمای ساختمان", url: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80" },
+      { title: "اتاق خواب", url: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=800&q=80" },
+      { title: "تراس و بالکن", url: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" },
+      { title: "نقشه واحد", url: "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=800&q=80" }
+    ],
+    features: [
+      "آسانسور استاندارد فعال",
+      "پارکینگ اختصاصی مسقف",
+      "انباری سندی قید در سند",
+      "بالکن و تراس آفتاب‌گیر",
+      "درب ضد سرقت ترک",
+      "لوله‌کشی کولر گازی اسپلیت",
+      "پکیج و رادیاتور نصب شده",
+      "کف سرامیک پرسلان کالیبره",
+      "کابینت MDF با گاز صفحه‌ای",
+      "پنجره دوجداره UPVC",
+      "آیفون تصویری هوشمند",
+      "انشعابات آب، برق و گاز مجزا"
+    ],
+    buyerTips: [
+      "قابلیت دریافت وام مسکن اوراق تا ۸۰۰ میلیون تومان",
+      "امکان رهن کامل تا سقف ۳۵۰ میلیون تومان توسط دفتر آداک",
+      "نقدینگی لازم جهت خرید: ۱,۴۰۰,۰۰۰,۰۰۰ تومان",
+      "انتقال قطعی در دفترخانه رسمی شماره عالیشهر"
+    ],
+    description: "مشاور املاک آداک مفتخر است این واحد ۱۰۰ متری نوساز و کلید نخورده را در یکی از تاپ‌ترین لوکیشن‌های فاز یک شهر جدید عالیشهر با دسترسی سریع به بلوار اصلی خلیج فارس، مراکز خرید محلی، داروخانه شبانه‌روزی و مدارس معرفی نماید. واحد در طبقه دوم ساختمانی خوش‌ساخت و بسیار کم‌تراکم (مجموعاً ۸ واحد در ۴ طبقه) قرار گرفته است. سالن پذیرایی کاملاً دلباز، پرده‌خور با نقشه تفکیکی و نورگیری مستقیم آفتاب بوده و هیچ‌گونه پرتی فضا در پلان معماری آن مشاهده نمی‌شود. از ویژگی‌های شاخص این ملک می‌توان به پارکینگ اختصاصی مسقف سندی، انباری جادار در طبقه همکف، آسانسور اتوماتیک ایتالیایی با موتور باکیفیت و بالکن کاربردی با ویوی باز اشاره کرد. سیستم گرمایش پکیج و رادیاتورهای نصب شده، کابینت‌های مدرن MDF پاک‌چوب درجه یک، شیرآلات اهرمی با گارانتی معتبر و درب ضد سرقت با روکش راش از متریال مرغوب استفاده شده در این واحد می‌باشند.",
+    legalGuarantee: "سند تک‌برگ اعیانی و عرصه شش‌دانگ آماده انتقال قطعی با کد رهگیری رسمی سامانه کاتب در دفتر مشاور املاک آداک با حضور مستقیم مدیریت مجموعه (نجفی)."
+  },
+  {
+    id: "AD-102",
+    code: "ADK-140302",
+    title: "فروش ویلایی دوبلکس ۲۰۰ متری - فاز ۲ عالیشهر با حیاط اختصاصی",
+    shortTitle: "ویلایی دوبلکس ۲۰۰ متری",
+    type: "sale",
+    category: "villa",
+    phase: "فاز ۲",
+    location: "فاز ۲ عالیشهر، حیاط اختصاصی",
+    priceTotal: "۳,۲۰۰,۰۰۰,۰۰۰",
+    priceUnit: "۱۶,۰۰۰,۰۰۰",
+    rentDeposit: null,
+    rentMonthly: null,
+    area: 200,
+    rooms: 3,
+    floor: "دوبلکس (همکف و اول)",
+    floorsTotal: 2,
+    unitsPerFloor: 1,
+    year: "۱۴۰۲ شخصی‌ساز",
+    document: "تک‌برگ عرصه و اعیان",
+    direction: "شمالی - جنوبی دو کله",
+    featured: true,
+    specialTag: "ویلایی دربست",
+    badge: "حیاط اختصاصی ماشین‌رو",
+    image: "https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1200&q=80",
+    gallery: [
+      { title: "نمای مدرن ویلا", url: "https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1200&q=80" },
+      { title: "حیاط و فضای سبز", url: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80" },
+      { title: "سالن دوبلکس", url: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" },
+      { title: "اتاق خواب مستر", url: "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=800&q=80" }
+    ],
+    features: [
+      "حیاط با گنجایش پارک ۳ خودرو",
+      "۳ خواب استاندارد (یک خواب مستر)",
+      "پله‌های چوبی گرد با هندریل مدرن",
+      "کابینت های‌گلاس ترک با جزیره",
+      "سند تک‌برگ رسمی شش‌دانگ",
+      "آلاچیق و باربیکیو سنگی در حیاط",
+      "سیستم مداربسته و دزدگیر هوشمند",
+      "کناف‌کاری سقف با نورپردازی مخفی"
+    ],
+    buyerTips: [
+      "سند آماده انتقال قطعی و اخذ هرگونه تسهیلات",
+      "قابلیت رهن کامل تا ۶۵۰ میلیون تومان توسط دفتر آداک",
+      "محیطی آرام و امن در فاز ۲ با تراکم پایین ساختمانی"
+    ],
+    description: "ویلای دوبلکس شخصی‌ساز با فنداسیون و اسکلت بتنی مهندسی در فاز ۲ عالیشهر. موقعیت عالی دو کله، حیاط مشجر دلباز، متریال درجه یک صادراتی و آماده سکونت بدون ریالی هزینه.",
+    legalGuarantee: "استعلام کامل ثبتی و شهرداری انجام شده، تسویه کامل عوارض و آماده انتقال قطعی در دفترخانه رسمی."
+  },
+  {
+    id: "AD-103",
+    code: "ADK-140303",
+    title: "فروش زمین تجاری مسکونی ۱۸۰ متری - بر اصلی بلوار خلیج فارس عالیشهر",
+    shortTitle: "زمین تجاری مسکونی ۱۸۰ متری",
+    type: "sale",
+    category: "land",
+    phase: "بلوار خلیج فارس",
+    location: "بر اصلی بلوار خلیج فارس عالیشهر",
+    priceTotal: "۲,۴۰۰,۰۰۰,۰۰۰",
+    priceUnit: "۱۳,۳۰۰,۰۰۰",
+    rentDeposit: null,
+    rentMonthly: null,
+    area: 180,
+    rooms: 0,
+    floor: "زمین (بر ۱۰ متر)",
+    floorsTotal: 0,
+    unitsPerFloor: 0,
+    year: "سند آماده انتقال",
+    document: "سند تک‌برگ رسمی",
+    direction: "بر بلوار اصلی",
+    featured: true,
+    specialTag: "موقعیت تجاری طلایی",
+    badge: "سند تک‌برگ ملکی",
+    image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80",
+    gallery: [
+      { title: "دید کلی موقعیت زمین", url: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80" },
+      { title: "بر اصلی بلوار خلیج فارس", url: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" }
+    ],
+    features: [
+      "بر اصلی ۱۰ متری به بلوار خلیج فارس",
+      "کاربری مصوب تجاری مسکونی",
+      "امکان ساخت همکف تجاری + ۳ طبقه روی پیلوت",
+      "انشعابات آب و برق بر سر زمین",
+      "سند تک برگ ملکی تفکیک شده"
+    ],
+    buyerTips: [
+      "بهترین فرصت سرمایه‌گذاری با ارزش افزوده بالا در عالیشهر",
+      "امکان شروع سریع عملیات ساخت با پروانه به‌روز",
+      "تضمین قیمت کارشناسی توسط مشاور املاک آداک"
+    ],
+    description: "قطعه زمین تجاری مسکونی با موقعیت استثنایی بر بلوار اصلی خلیج فارس شهر جدید عالیشهر. مناسب برای ساخت پاساژ محلی، کلینیک یا واحدهای تجاری اداری.",
+    legalGuarantee: "دارای استعلام شرکت عمران عالیشهر، بدون هرگونه معارض و آماده انتقال سند تک‌برگ."
+  },
+  {
+    id: "AD-104",
+    code: "ADK-140304",
+    title: "فروش آپارتمان ۸۵ متری مجتمع تجاری مسکونی کوروش - فاز یک عالیشهر",
+    shortTitle: "آپارتمان ۸۵ متری مجتمع کوروش",
+    type: "sale",
+    category: "apartment",
+    phase: "فاز ۱",
+    location: "فاز ۱، دسترسی عالی تجاری، جنب مجتمع کوروش",
+    priceTotal: "۱,۴۵۰,۰۰۰,۰۰۰",
+    priceUnit: "۱۷,۰۰۰,۰۰۰",
+    rentDeposit: null,
+    rentMonthly: null,
+    area: 85,
+    rooms: 2,
+    floor: "۳ با آسانسور",
+    floorsTotal: 4,
+    unitsPerFloor: 3,
+    year: "۱۳۹۹",
+    document: "سند تک‌برگ رسمی",
+    direction: "رو به بلوار",
+    featured: true,
+    specialTag: "لوکیشن عالی",
+    badge: "آسانسور و پارکینگ",
+    image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+    gallery: [
+      { title: "نمای مجتمع", url: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80" },
+      { title: "سالن و نورگیر", url: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80" }
+    ],
+    features: [
+      "پارکینگ اختصاصی قید در سند",
+      "آسانسور ۶ نفره تمام استیل",
+      "دسترسی پیاده به فروشگاه اتکا و بانک‌ها",
+      "کابینت MDF با گاز رومیزی",
+      "کولر گازی ۲۴۰۰۰ اسپلیت"
+    ],
+    buyerTips: [
+      "واحد هم‌اکنون به مبلغ ۳۰۰ میلیون تومان در رهن مستاجر می‌باشد",
+      "پرداختی نقدی خریدار تنها ۱,۱۵۰,۰۰۰,۰۰۰ تومان"
+    ],
+    description: "واحد خوش‌نقشه در مجتمع شناخته‌شده کوروش فاز یک عالیشهر با بهترین سطح دسترسی به تاکسی، فروشگاه اتکا و بازار روز.",
+    legalGuarantee: "سند رسمی تک‌برگ با سابقه انتقال معتبر در دفتر املاک آداک."
+  },
+  {
+    id: "AD-105",
+    code: "ADK-140305",
+    title: "رهن و اجاره آپارتمان ۹۰ متری فاز یک عالیشهر (۲ خواب، تمیز و تخلیه)",
+    shortTitle: "آپارتمان ۹۰ متری",
+    type: "rent",
+    category: "apartment",
+    phase: "فاز ۱",
+    location: "عالیشهر، فاز یک (۲ خواب، تمیز و تخلیه)",
+    priceTotal: null,
+    priceUnit: null,
+    rentDeposit: "۱۵۰,۰۰۰,۰۰۰",
+    rentMonthly: "۴,۵۰۰,۰۰۰",
+    area: 90,
+    rooms: 2,
+    floor: "۱ با آسانسور",
+    floorsTotal: 3,
+    unitsPerFloor: 2,
+    year: "۱۴۰۱",
+    document: "قرارداد رسمی با کدرهگیری سامانه کاتب",
+    direction: "رو به آفتاب",
+    featured: true,
+    specialTag: "رهن و اجاره مسکونی",
+    badge: "تحویل فوری و کلید در دفتر",
+    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80",
+    gallery: [
+      { title: "سالن", url: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80" },
+      { title: "آشپزخانه", url: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80" }
+    ],
+    features: [
+      "کابینت MDF نو",
+      "گاز رومیزی و هود لمسی",
+      "آسانسور و پارکینگ مسقف",
+      "پکیج و رادیاتور فعال",
+      "کمد دیواری عمیق در هر دو خواب"
+    ],
+    buyerTips: [
+      "تخلیه فوری و آماده تحویل در همان روز قرارداد",
+      "قابلیت تبدیل جزئی مبلغ رهن و اجاره"
+    ],
+    description: "واحد نقلی و فوق‌العاده تمیز در طبقه اول فاز یک با همسایگانی بافرهنگ و محترم. بازدید آزاد با هماهنگی تلفنی.",
+    legalGuarantee: "عقد قرارداد رسمی اجاره‌نامه با دریافت کدرهگیری و استعلام مالکیت در دفتر املاک آداک."
+  },
+  {
+    id: "AD-106",
+    code: "ADK-140306",
+    title: "رهن و اجاره ویلایی دربست ۱۲۰ متری فاز ۳ عالیشهر (حیاط ماشین‌رو)",
+    shortTitle: "ویلایی دربست ۱۲۰ متری",
+    type: "rent",
+    category: "villa",
+    phase: "فاز ۳",
+    location: "عالیشهر، فاز ۳ (حیاط ماشین‌رو)",
+    priceTotal: null,
+    priceUnit: null,
+    rentDeposit: "۳۰۰,۰۰۰,۰۰۰",
+    rentMonthly: "۲,۰۰۰,۰۰۰",
+    area: 120,
+    rooms: 2,
+    floor: "همکف ویلایی دربست",
+    floorsTotal: 1,
+    unitsPerFloor: 1,
+    year: "۱۳۹۸",
+    document: "قرارداد رسمی با کدرهگیری",
+    direction: "دربست مستقل",
+    featured: true,
+    specialTag: "ویلایی مستقل",
+    badge: "حیاط ماشین‌رو",
+    image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1200&q=80",
+    gallery: [
+      { title: "نمای حیاط", url: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1200&q=80" },
+      { title: "فضای داخلی", url: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" }
+    ],
+    features: [
+      "دربست کامل بدون مشرف",
+      "حیاط با امکان پارک ۲ خودرو",
+      "کابینت فلزی تمیز با رویه MDF",
+      "انباری بزرگ در حیاط خلوت",
+      "کنتور آب و برق و گاز کاملاً مستقل"
+    ],
+    buyerTips: [
+      "مناسب برای خانواده‌های خواهان آرامش و استقلال کامل",
+      "تخلیه آخر ماه جاری"
+    ],
+    description: "ویلایی دربست در فاز ۳ عالیشهر، محیطی دنج و آرام با حیاط باصفا و دسترسی به خیابان اصلی.",
+    legalGuarantee: "ثبت قرارداد در سامانه معاملات املاک کشور با کدرهگیری رسمی."
+  },
+  {
+    id: "AD-107",
+    code: "ADK-140307",
+    title: "رهن و اجاره سوئیت نقلی ۶۰ متری فاز یک عالیشهر (یک خوابه، مناسب خانواده کم‌جمعیت)",
+    shortTitle: "سوئیت نقلی ۶۰ متری",
+    type: "rent",
+    category: "apartment",
+    phase: "فاز ۱",
+    location: "عالیشهر، فاز یک (یک خوابه، مناسب خانواده کم‌جمعیت)",
+    priceTotal: null,
+    priceUnit: null,
+    rentDeposit: "۱۰۰,۰۰۰,۰۰۰",
+    rentMonthly: "۳,۵۰۰,۰۰۰",
+    area: 60,
+    rooms: 1,
+    floor: "همکف با حیاط خلوت",
+    floorsTotal: 2,
+    unitsPerFloor: 2,
+    year: "۱۴۰۰",
+    document: "قرارداد رسمی",
+    direction: "رو به حیاط",
+    featured: true,
+    specialTag: "سوئیت نقلی",
+    badge: "دسترسی عالی فاز ۱",
+    image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80",
+    gallery: [
+      { title: "سالن سوئیت", url: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80" }
+    ],
+    features: [
+      "ورودی مستقل و دنج",
+      "کابینت MDF و هود",
+      "کولر اسپلیت نصب شده",
+      "مناسب زوج یا کارمندان محترم",
+      "دسترسی نزدیک به بازار روز"
+    ],
+    buyerTips: [
+      "مبلغ ودیعه مناسب و فوری",
+      "تخلیه و آماده بازدید"
+    ],
+    description: "سوئیت ۶۰ متری یک خوابه واقع در فاز ۱ عالیشهر با موقعیت مکانی عالی و دسترسی پیاده به همه امکانات شهری.",
+    legalGuarantee: "تنظیم قرارداد اجاره قانونی با کدرهگیری در املاک آداک."
+  },
+  {
+    id: "AD-108",
+    code: "ADK-140308",
+    title: "فروش آپارتمان ۸۵ متری فول امکانات فاز یک عالیشهر",
+    shortTitle: "آپارتمان ۸۵ متری فول امکانات",
+    type: "sale",
+    category: "apartment",
+    phase: "فاز ۱",
+    location: "عالیشهر، فاز یک، خیابان انقلاب",
+    priceTotal: "۱,۲۲۰,۰۰۰,۰۰۰",
+    priceUnit: "۱۴,۳۵۰,۰۰۰",
+    rentDeposit: null,
+    rentMonthly: null,
+    area: 85,
+    rooms: 2,
+    floor: "۳ با آسانسور",
+    floorsTotal: 4,
+    unitsPerFloor: 2,
+    year: "۱۳۹۹",
+    document: "سند تک‌برگ قید در سند",
+    direction: "شمالی نورگیر",
+    featured: false,
+    specialTag: "فروش ویژه",
+    badge: "فول امکانات",
+    image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80",
+    gallery: [
+      { title: "سالن", url: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80" }
+    ],
+    features: [
+      "طبقه ۳ با آسانسور",
+      "پارکینگ اختصاصی قید در سند",
+      "کابینت‌های گلاس",
+      "کف سرامیک کالیبره",
+      "سند تک‌برگ آزاد"
+    ],
+    buyerTips: ["فروش فوری با تخفیف پای معامله"],
+    description: "واحد تمیز و فول دیزاین در فاز یک عالیشهر، سند تک‌برگ آماده انتقال قطعی.",
+    legalGuarantee: "سند شش‌دانگ تک‌برگ آزاد و آماده محضر."
+  },
+  {
+    id: "AD-109",
+    code: "ADK-140309",
+    title: "فروش ویلایی ۱۸۰ متری نوساز شخصی‌ساز - فاز ۲ عالیشهر",
+    shortTitle: "ویلایی ۱۸۰ متری نوساز شخصی‌ساز",
+    type: "sale",
+    category: "villa",
+    phase: "فاز ۲",
+    location: "عالیشهر، فاز دو، ویلایی‌ها",
+    priceTotal: "۳,۱۰۰,۰۰۰,۰۰۰",
+    priceUnit: "۱۷,۲۰۰,۰۰۰",
+    rentDeposit: null,
+    rentMonthly: null,
+    area: 180,
+    rooms: 3,
+    floor: "ویلایی همکف با حیاط",
+    floorsTotal: 1,
+    unitsPerFloor: 1,
+    year: "۱۴۰۲",
+    document: "سند تک‌برگ ملکی",
+    direction: "جنوبی آفتاب‌گیر",
+    featured: false,
+    specialTag: "ویلایی دربست",
+    badge: "نوساز شخصی‌ساز",
+    image: "https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1200&q=80",
+    gallery: [
+      { title: "ویلای ۱۸۰ متری", url: "https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1200&q=80" }
+    ],
+    features: [
+      "حیاط اختصاصی دو ماشین",
+      "۳ خواب مستر",
+      "متریال درجه یک صادراتی",
+      "سقف کناف و نورپردازی",
+      "سند تک‌برگ آماده انتقال"
+    ],
+    buyerTips: ["ارزش افزوده بالا و لوکیشن دنج در فاز ۲"],
+    description: "ویلایی خوش‌ساخت با پلان بی‌نقص در فاز ۲ عالیشهر، ۳ خوابه دلباز با حیاط ماشین‌رو.",
+    legalGuarantee: "تضمین کتبی اصالت سند و عدم بدهی شهرداری در دفتر املاک آداک."
+  },
+  {
+    id: "AD-110",
+    code: "ADK-140310",
+    title: "فروش آپارتمان ۷۵ متری بازسازی شده - فاز یک میدان شهدا",
+    shortTitle: "آپارتمان ۷۵ متری بازسازی شده",
+    type: "sale",
+    category: "apartment",
+    phase: "فاز ۱",
+    location: "عالیشهر، فاز یک، میدان شهدا",
+    priceTotal: "۱,۱۹۰,۰۰۰,۰۰۰",
+    priceUnit: "۱۵,۸۵۰,۰۰۰",
+    rentDeposit: null,
+    rentMonthly: null,
+    area: 75,
+    rooms: 2,
+    floor: "۲ با پله راحت",
+    floorsTotal: 3,
+    unitsPerFloor: 2,
+    year: "۱۳۹۶ (بازسازی کامل ۱۴۰۲)",
+    document: "سند شش‌دانگ آماده وام",
+    direction: "رو به نما",
+    featured: false,
+    specialTag: "قیمت اقتصادی",
+    badge: "آماده وام مسکن",
+    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+    gallery: [
+      { title: "تراس و سالن", url: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80" }
+    ],
+    features: [
+      "سند شش‌دانگ آماده وام تا ۸۰۰ میلیون",
+      "تخلیه فوری",
+      "موقعیت دسترسی بی‌نظیر",
+      "نقاشی و سرامیک نو",
+      "پارکینگ محوطه امن"
+    ],
+    buyerTips: ["حداقل نقدینگی مورد نیاز با وام مسکن: تنها ۳۹۰ میلیون تومان!"],
+    description: "بهترین گزینه برای خانه‌دار شدن با حداقل بودجه در فاز یک عالیشهر با سند آماده انتقال قطعی.",
+    legalGuarantee: "استعلام برخط سند و امکان دریافت وام بانکی در سریع‌ترین زمان."
+  }
+];
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = { propertiesData };
+}
